@@ -1,3 +1,10 @@
+backports.ssl-match-hostname (3.4.0.2-1~precise0+exo1) precise; urgency=medium
+
+  * Backport to Precise.
+    + Don't use pybuild.
+
+ -- Vincent Bernat <bernat@debian.org>  Mon, 20 Jun 2016 11:31:04 +0200
+
 backports.ssl-match-hostname (3.4.0.2-1) unstable; urgency=medium
 
   * Initial release. (Closes: #747481)

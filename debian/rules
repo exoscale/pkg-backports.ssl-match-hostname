@@ -1,6 +1,6 @@
 #!/usr/bin/make -f
 %:
-	dh $@ --with python2 --buildsystem=pybuild
+	dh $@ --with python2
 
 override_dh_auto_build:
 	mv $(CURDIR)/src/backports/ssl_match_hostname/README.txt $(CURDIR)/
