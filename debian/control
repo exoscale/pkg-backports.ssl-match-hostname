@@ -1,0 +1,30 @@
+Source: backports.ssl-match-hostname
+Section: python
+Priority: optional
+Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
+Uploaders: Nicolas Dandrimont <olasd@debian.org>
+Build-Depends: debhelper (>= 9),
+               dh-python,
+               python-all,
+               python-setuptools
+Standards-Version: 3.9.5
+X-Python-Version: >= 2.4
+Homepage: https://bitbucket.org/brandon/backports.ssl_match_hostname
+
+Package: python-backports.ssl-match-hostname
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: Backport of the Python 3.2 SSL hostname checking function
+ The Secure Sockets layer is only actually secure if you check the
+ hostname in the certificate returned by the server to which you are
+ connecting, and verify that it matches to hostname that you are trying
+ to reach.
+ .
+ But the matching logic, defined in RFC2818, can be a bit tricky to
+ implement on your own. So the ssl package in the Standard Library of
+ Python 3.2 and greater now includes a match_hostname() function for
+ performing this check instead of requiring every application to
+ implement the check separately.
+ .
+ This package contains a backport of the ssl.match_hostname function for
+ Python 2.4 and above.

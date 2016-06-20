@@ -1,0 +1,5 @@
+backports.ssl-match-hostname (3.4.0.2-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #747481)
+
+ -- Nicolas Dandrimont <olasd@debian.org>  Sun, 11 May 2014 13:37:08 +0200
